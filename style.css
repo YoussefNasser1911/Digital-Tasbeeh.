@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background:
+    linear-gradient(135deg,#064e3b 0%, #0e7490 60%, #a3e635 100%),
+    radial-gradient(60% 100% at 100% 0%, rgba(255,215,0,.15), transparent 60%);
+    background-blend-mode: screen, normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 25vh;
+    width: 55vw;
+    background: rgba(255, 255, 255, 0.08); 
+    backdrop-filter: blur(10px);           
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    text-align: center;
+    color: #f0fdf4; 
+    border: 2px solid rgba(16,185,129,0.5); 
+    outline: none;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+button{
+    width: 15vw;
+    margin: 15px 0;
+    padding: 8px 0;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #facc15;
+    color: #1e293b; 
+}
+
+.tasbeeh {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.counter {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #facc15; 
+}
+
+.ayah{
+    display: none;
+    text-align: center;
+}
+
+#note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #393939;
+    text-align: center;
+    font-weight: 800;
+}
+
+.ayah img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+    h2 {
+        font-size: 32px;
+    }
+    button {
+        width: 15vw;
+        font-size: 18px;
+    }
+    .ayah img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 70vw;
+        height: auto;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    button {
+        width: 22vw;
+        font-size: 16px;
+    }
+    .ayah img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85vw;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    button {
+        width: 60vw;
+        font-size: 16px;
+    }
+    .ayah img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95vw;
+        padding: 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    button {
+        width: 70vw;
+        font-size: 14px;
+        padding: 6px 0;
+    }
+    #note {
+        font-size: 12px;
+    }
+    .ayah img {
+        max-width: 250px;
+    }
+}
