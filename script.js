@@ -83,7 +83,7 @@ btn3.addEventListener("click", function() {
 // اية الكرسي بعد م المستخدم يوصل ل 33 لكل تسبيحة ;
 
 let ayah = document.getElementById('Kr');
-let container = document.getElementById('container');  // ✅ لازم يبقى id="container" في HTML
+let container = document.getElementById('container');  
 
 function showImg (count) {
     if(count === 33){
@@ -96,5 +96,6 @@ function showImg (count) {
         }, 30000); 
     }
 }
+
 
 // Made By Youssef Nasser // 
